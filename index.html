@@ -1,53 +1,129 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>wheelsNboots</title>
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-        <link href="css/index.css" rel="stylesheet">
-    </head>
-    <body>
-
-
-        <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheels N Boots - Adventure Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <!-- Topbar with Gmail contact and social links -->
+        <div class="topbar bg-dark text-white py-2">
+            <div class="container d-flex justify-content-between flex-wrap">
+                <span>Contact: wheelsnboots@gmail.com</span>
+                <div class="social-links">
+                    <a href="#" class="text-white me-3">Instagram</a>
+                    <a href="#" class="text-white me-3">Facebook</a>
+                    <a href="#" class="text-white">Email</a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
+    </header>
 
-    <div class="wrapper">
-        <div class="sidebar">
-            
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar sticky-top">
+                <div class="position-sticky pt-3 text-center">
+                    <img src="img/logo.jpeg" alt="Wheels N Boots Logo" class="img-fluid rounded-circle mb-3" width="150">
+                    <h4 class="text-white">Wheels N Boots</h4>
+                    <p class="text-white">Explore | Learn | Make Memories</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#adventures">Adventures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#gear">Gear Recommendations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
+            <!-- Main Content -->
+            <main class="col-md-9 col-lg-10 px-md-4">
+                <section id="hero" class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h1 class="hero-title">LET'S CREATE MEMORIES</h1>
+                    </div>
+                </section>
+                
+
+
+                <!-- About Me Section -->
+                <section id="about" class="py-5 bg-light">
+                    <h2 class="text-dark">About Me</h2>
+                    <p>Welcome to my portfolio! I’m a passionate hiker and motorbike rider. Follow my adventures through rugged mountains and scenic biking trails.</p>
+                </section>
+
+                <!-- Adventures Section -->
+                <section id="adventures" class="py-5 bg-dark text-white">
+                    <h2>My Adventures</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="adventure">
+                                <img src="img/courosel.jpeg" class="img-fluid rounded mb-3" alt="Hiking Adventure">
+                                <h3 class="text-light">Mountain Hiking</h3>
+                                <p>Exploring the wild and reaching new heights!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="adventure">
+                                <img src="img/courosel.jpeg" class="img-fluid rounded mb-3" alt="Biking Adventure">
+                                <h3 class="text-light">Motorbike Riding</h3>
+                                <p>Challenging terrains and exhilarating rides!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gallery Section -->
+                <section id="gallery" class="py-5">
+                    <h2 class="text-dark">Gallery</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/bike.jpeg" class="img-fluid rounded mb-3" alt="Gallery Image 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/bike.jpeg" class="img-fluid rounded mb-3" alt="Gallery Image 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/bike.jpeg" class="img-fluid rounded mb-3" alt="Gallery Image 3">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gear Recommendations Section -->
+                <section id="gear" class="py-5 bg-light">
+                    <h2 class="text-dark">Gear Recommendations</h2>
+                    <p>Discover the best gear for your next adventure!</p>
+                </section>
+
+                <!-- Contact Section -->
+                <footer id="contact" class="py-5 text-center bg-dark text-white">
+                    <h2>Contact Me</h2>
+                    <p>Connect with me on social media or send an email!</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-white">Instagram</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Facebook</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Email</a></li>
+                    </ul>
+                </footer>
+            </main>
         </div>
-
     </div>
 
-
-
-            
-
-
-
-
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

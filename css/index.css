@@ -1,0 +1,140 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+a {
+    text-decoration: none;
+    color: #f94b29;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Topbar */
+.topbar {
+    background-color: #333;
+}
+
+.topbar a {
+    color: #f4a261;
+    font-size: 14px;
+}
+
+.topbar span {
+    font-size: 14px;
+}
+
+/* Sidebar */
+#sidebar {
+    padding: 20px;
+    background-color: #333;
+    height: 100vh;
+}
+
+#sidebar h4, #sidebar p, #sidebar a {
+    color: #fff;
+}
+
+#sidebar a.nav-link {
+    color: #f94b29;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#sidebar a.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/logo.jpeg'); /* Set your image path here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black shading with 50% opacity */
+    z-index: 1;
+}
+
+.hero-section .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+/* Adventures */
+.adventure h3 {
+    color: #f4a261;
+}
+
+/* Footer */
+footer {
+    padding: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f4a261;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    
+    #sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    .topbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .topbar .social-links {
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        height: 60vh;
+    }
+}
