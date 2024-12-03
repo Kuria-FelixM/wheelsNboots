@@ -1,4 +1,4 @@
 # wheelsNboots
 
 
-A website for a trail adventure expenditure.
+This website for trail adventure expenditure.
