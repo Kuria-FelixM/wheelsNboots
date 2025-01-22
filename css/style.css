@@ -1,0 +1,95 @@
+/* Sidebar */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    /*left: -250px; /* Hidden by default on small devices */
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.8), rgba(192, 192, 192, 0.6)); /* Semi-transparent gradient */
+    transition: left 0.3s ease, background-color 0.3s ease;
+    z-index: 1000; /* Ensure the sidebar is above other content */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  /* Sidebar when opened */
+  #sidebar.open {
+    left: 0; /* Slide in */
+  }the
+  
+  /* Ensure the sidebar contents start from the top */
+  #sidebar .container-fluid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start links from the top */
+    align-items: flex-start; /* Align items to the left */
+    padding-top: 20px; /* Add spacing */
+  }
+  
+  #hero{
+    background-image: url(../img/rbgg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+  }
+  
+  /* Links Styling */
+  #sidebar .nav-link {
+    color: #1d1c1c; /* White text for visibility */
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px 15px; /* Add padding for spacing */
+    text-decoration: none; /* Remove underlines */
+  }
+  
+  #sidebar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+    border-radius: 5px;
+  }
+  
+  /* Toggler Button */
+  .navbar-toggler {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1050; /* Ensure it's above the sidebar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Main Content */
+  body {
+    margin-left: 0px; /* Adjust for fixed sidebar */
+    transition: margin-left 0.3s ease; /* Smooth transition for layout */
+  }
+
+  @media (min-width: 768px) {
+    #about, #products, #footer{
+        margin-left: 250px;
+      }
+  }
+  
+  
+  /* Small Screens (Sidebar Hidden by Default) */
+  @media (max-width: 768px) {
+    #sidebar {
+      position: fixed;
+      left: -250px; /* Sidebar starts hidden */
+      transition: left 0.3s ease;
+    }
+  
+    #sidebar.open {
+      left: 0; /* Sidebar slides in */
+    }
+  
+    body {
+      margin-left: 0; /* Reset margin for small devices */
+    }
+  }
+  
+  /* Ensure the sidebar has a higher stacking order */
+  @media (max-width: 768px) {
+    #sidebar {
+      z-index: 1050; /* Sidebar sits above content */
+    }
+  }
+  
