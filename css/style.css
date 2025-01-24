@@ -70,7 +70,9 @@
   
   
   /* Small Screens (Sidebar Hidden by Default) */
-  @media (max-width: 768px) {
+  @media (max-width: 768px) {     body {
+    margin-left: 0; /* Reset margin for small devices */
+  }
     #sidebar {
       position: fixed;
       left: -250px; /* Sidebar starts hidden */
